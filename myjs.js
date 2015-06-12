@@ -1,6 +1,6 @@
 $(function(){
 	var phone_patt=/^1[3,5,7,8][0-9]{9}$/;//手机号正则
-	$("#phone").keyup(function(){
+	$("#phone").keyup(function(){//监听
 		var phone=$("#phone").val();
 		if(phone_patt.test(phone)){
 			$("#tijiao").css({background:'#f53037',color:'white',cursor:'pointer'});
